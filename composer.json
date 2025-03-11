@@ -1,0 +1,16 @@
+{
+      "name": "yeswiki/theme-bootstrap5",
+      "license": "AGPL-3.0",
+      "type": "yeswiki-theme",
+      "require": {
+           "composer/installers": "~1.0"
+      },
+      "extra": {
+           "installer-name": "bootstrap5"
+      },
+      "config": {
+            "allow-plugins": {
+                  "composer/installers": true
+            }
+      }
+}

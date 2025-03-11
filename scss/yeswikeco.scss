@@ -1,0 +1,69 @@
+/* // Functions first
+@import "./bootstrap-5.3.2/scss/functions";
+
+// Variable overrides second
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Required Bootstrap imports
+@import "./bootstrap-5.3.2/scss/variables";
+@import "./bootstrap-5.3.2/scss/variables-dark";
+@import "./bootstrap-5.3.2/scss/maps";
+@import "./bootstrap-5.3.2/scss/mixins";
+@import "./bootstrap-5.3.2/scss/root";
+
+// Optional components
+@import "./bootstrap-5.3.2/scss/utilities";
+@import "./bootstrap-5.3.2/scss/reboot";
+@import "./bootstrap-5.3.2/scss/containers";
+@import "./bootstrap-5.3.2/scss/grid";
+@import "./bootstrap-5.3.2/scss/helpers";
+@import "./bootstrap-5.3.2/scss/utilities/api";
+ */
+
+ // Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Then import Bootstrap
+@import "./bootstrap-5.3.2/scss/bootstrap";
+
+#yw-topnav .dropdown-menu a:hover {
+  color: var(--navbar-link-hover-color) !important;
+}
+.checkbox label span {
+  margin-left: .5em;
+}
+#YesWikiModal .modal-header {
+flex-direction: row-reverse;
+}
+.yeswiki-iframe-body .BAZ_menu,
+.yeswiki-iframe-body .input-listefiche,
+.modal-body .page .BAZ_menu,
+.modal-body .input-listefiche {display:none !important}
+.group-checkbox-checkboxListeConsentementInscriptionbf_checkbox_group .checkbox {
+  display:block;
+  width:100%
+}
+.yeswiki-iframe-body .favorites {
+display:none;
+}
+.group-checkbox-checkboxListeConsentementInscriptionbf_checkbox_group {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+.footer {
+  margin: 3.5em 0 2em 0 !important;
+  font-size: .9em;
+}
+.footer > a {
+padding:3px 1em}
+.footer > a > i.fa {
+margin-right:8px;
+}
+.pull-left {float:left}
+.pull-right {float:right}
+.alert-success .pull-right.btn-primary { display:none; }
