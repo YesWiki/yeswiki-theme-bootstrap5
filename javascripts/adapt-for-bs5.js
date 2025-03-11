@@ -36,6 +36,19 @@ document.addEventListener('DOMContentLoaded', function(event) {
             $(this).attr('data-bs-parent', $(this).attr('data-parent'))
     })
 
+  $('.modal-content > .modal-header h3').addClass('modal-title')
+	$('.modal-content > .modal-header .close').addClass('btn-close').html('').prependTo($(this).parents('.modal-header'))
+   $('[data-dismiss]').each(function(i) {
+      $(this).attr('data-bs-dismiss', $(this).attr('data-dismiss'))
+   })
+   document.getElementsByTagName('body')[0].addEventListener('show.bs.modal', event => {
+      console.log(event.target)
+      $('.modal-content > .modal-header h3').addClass('modal-title')
+		$('.modal-content > .modal-header .close').addClass('btn-close').html('').appendTo($(this).parents('.modal-header'))
+	   $('[data-dismiss]').each(function(i) {
+	      $(this).attr('data-bs-dismiss', $(this).attr('data-dismiss'))
+	   })
+   })
        
 });
 
