@@ -1,34 +1,52 @@
-/* // Functions first
-@import "./bootstrap-5.3.2/scss/functions";
+// Functions first
+@import "../node_modules/bootstrap/scss/functions";
 
 // Variable overrides second
 $primary: #900;
-$enable-shadows: true;
+$enable-shadows: false;
 $prefix: "mo-";
 
-// Required Bootstrap imports
-@import "./bootstrap-5.3.2/scss/variables";
-@import "./bootstrap-5.3.2/scss/variables-dark";
-@import "./bootstrap-5.3.2/scss/maps";
-@import "./bootstrap-5.3.2/scss/mixins";
-@import "./bootstrap-5.3.2/scss/root";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/accordion";
+@import "../node_modules/bootstrap/scss/breadcrumb";
+@import "../node_modules/bootstrap/scss/pagination";
+@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/progress";
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/tooltip";
+@import "../node_modules/bootstrap/scss/popover";
+@import "../node_modules/bootstrap/scss/placeholders";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
 
-// Optional components
-@import "./bootstrap-5.3.2/scss/utilities";
-@import "./bootstrap-5.3.2/scss/reboot";
-@import "./bootstrap-5.3.2/scss/containers";
-@import "./bootstrap-5.3.2/scss/grid";
-@import "./bootstrap-5.3.2/scss/helpers";
-@import "./bootstrap-5.3.2/scss/utilities/api";
- */
 
  // Variable overrides first
-$primary: #900;
-$enable-shadows: true;
-$prefix: "mo-";
+//$primary: #900;
+//$enable-shadows: true;
+//$prefix: "mo-";
 
 // Then import Bootstrap
-@import "./bootstrap-5.3.2/scss/bootstrap";
+//@import "../node_modules/bootstrap/scss/bootstrap";
 
 #yw-topnav .dropdown-menu a:hover {
   color: var(--navbar-link-hover-color) !important;

@@ -4,7 +4,12 @@
     "@eslint/js": "^9.22.0",
     "globals": "^16.0.0"
   },
+  "scripts": {
+    "watch": "sass --watch scss/yeswikeco.scss styles/yeswikeco.bs.min.css --style compressed --silence-deprecation mixed-decls --silence-deprecation color-functions --silence-deprecation import --silence-deprecation global-builtin",
+    "build": "sass scss/yeswikeco.scss styles/yeswikeco.bs.min.css --style compressed --silence-deprecation mixed-decls --silence-deprecation color-functions --silence-deprecation import --silence-deprecation global-builtin"
+  },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "eslint-config-airbnb-base": "^15.0.0"
   }
 }
