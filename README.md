@@ -4,7 +4,7 @@ Bootstrap 5 theme for YesWiki Doryphore
 
 ## Install dependencies
 
-You need sass and eslint globally installed `npm install sass globals @eslint/js @eslint/eslintrc -D`
+You need sass and eslint globally installed `npm install globals sass @eslint/js @eslint/eslintrc -D`
 Install Bootstrap dependencies with `npm install`
 
 ## Watch and build
